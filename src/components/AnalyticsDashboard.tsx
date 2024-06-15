@@ -3,6 +3,7 @@
 import { analytics } from "@/utils/analytics";
 import { BarChart, Card } from "@tremor/react";
 import { ArrowDownRight, ArrowRight, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import ReactCountryFlag from "react-country-flag";
 
 interface AnalyticsDashboardProps {
@@ -49,6 +50,12 @@ const AnalyticsDashboard = ({
 }: AnalyticsDashboardProps) => {
   return (
     <div className="flex flex-col gap-6 px-6 sm:px-14">
+      <Link
+        href="/"
+        className="bg-blue-500 p-1 w-32 text-center text-dark-tremor-content-strong rounded"
+      >
+        Home Page
+      </Link>
       <div className="grid w-full mx-auto grid-cols-1 sm:grid-cols-2 gap-6">
         <Card className="w-full">
           <p className="text-tremor-default text-dark-tremor-content">
