@@ -25,7 +25,6 @@ const Page = async () => {
     );
 
   const topCountriesMap = new Map<string, number>();
-console.log(pageviews[6]?.events[0])
   for (let i = 0; i < pageviews.length; i++) {
     const day = pageviews[i];
     if (!day) continue;
@@ -36,7 +35,6 @@ console.log(pageviews[6]?.events[0])
       const key = Object.keys(event)[0]!;
       const value = Object.values(event)[0]!;
       const parsedKey = JSON.parse(key);
-      console.log(parsedKey)
       const country = parsedKey?.country;
 
       if (country) {

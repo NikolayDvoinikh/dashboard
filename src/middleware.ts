@@ -16,5 +16,5 @@ export default async function middleware(req: NextRequest) {
 }
 
 export const matcher = {
-  matcher: ["/", "https://dashboard-mu-roan.vercel.app/"],
+  matcher: ["/"],
 };
