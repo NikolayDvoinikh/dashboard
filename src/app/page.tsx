@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function Home() {
-  // IMPORTANT: This analytics dashboard is compatible with any app, your main app lives here!
   const className =
     "inline-flex gap-1 items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset mx-1";
   return (
