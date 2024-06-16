@@ -50,7 +50,7 @@ const Page = async () => {
   }
 
   const topCountries = [...topCountriesMap.entries()]
-    .sort((a, b) => (a > b ? -1 : 1))
+    .sort((a, b) => (a[1] > b[1] ? -1 : 1))
     .slice(0, 5);
 
   return (
